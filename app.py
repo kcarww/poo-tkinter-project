@@ -138,7 +138,7 @@ class App:
     def editarAluno(self):
         matricula = self.txt_matricula.get()
         for aluno in self.alunos:
-            if aluno.matricula == matricula:
+            if str(aluno.matricula) == matricula:
                 aluno.nome = self.txt_nome.get()
                 aluno.idade = int(self.txt_idade.get())
                 aluno.curso = self.cb_cursos.get()
